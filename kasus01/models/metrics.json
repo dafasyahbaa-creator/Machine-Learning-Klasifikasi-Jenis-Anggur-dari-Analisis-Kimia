@@ -1,0 +1,467 @@
+{
+  "kasus": "Kasus 1 - Klasifikasi kultivar anggur",
+  "nama_model": "SVM (RBF)",
+  "hyperparameter": {
+    "model__C": 1.0,
+    "model__gamma": "scale"
+  },
+  "target": "kultivar",
+  "kelas": [
+    "Kultivar A",
+    "Kultivar B",
+    "Kultivar C"
+  ],
+  "fitur_mentah": [
+    "alcohol",
+    "malic_acid",
+    "ash",
+    "alcalinity_of_ash",
+    "magnesium",
+    "total_phenols",
+    "flavanoids",
+    "nonflavanoid_phenols",
+    "proanthocyanins",
+    "color_intensity",
+    "hue",
+    "od280_od315_of_diluted_wines",
+    "proline"
+  ],
+  "fitur_akhir": [
+    "alcohol",
+    "malic_acid",
+    "ash",
+    "alcalinity_of_ash",
+    "magnesium",
+    "nonflavanoid_phenols",
+    "proanthocyanins",
+    "color_intensity",
+    "hue",
+    "od280_od315_of_diluted_wines",
+    "proline",
+    "rasio_flavonoid_fenol",
+    "rasio_nonflavonoid_fenol",
+    "rasio_proantosianin_fenol",
+    "rasio_od_flavonoid",
+    "rasio_alkalinitas_abu",
+    "rasio_prolin_alkohol"
+  ],
+  "varian_fitur": "C. Rasio, tanpa total_phenols & flavanoids (17)",
+  "rentang_fitur": {
+    "alcohol": {
+      "min": 11.03,
+      "max": 14.83,
+      "median": 13.01,
+      "q05": 11.666500000000001,
+      "q95": 14.2295
+    },
+    "malic_acid": {
+      "min": 0.74,
+      "max": 5.8,
+      "median": 1.81,
+      "q05": 0.9950000000000001,
+      "q95": 4.3575
+    },
+    "ash": {
+      "min": 1.36,
+      "max": 3.22,
+      "median": 2.36,
+      "q05": 1.9215,
+      "q95": 2.7295
+    },
+    "alcalinity_of_ash": {
+      "min": 10.6,
+      "max": 30.0,
+      "median": 19.5,
+      "q05": 14.61,
+      "q95": 25.0
+    },
+    "magnesium": {
+      "min": 70.0,
+      "max": 162.0,
+      "median": 97.0,
+      "q05": 81.05,
+      "q95": 126.84999999999997
+    },
+    "total_phenols": {
+      "min": 0.98,
+      "max": 3.88,
+      "median": 2.335,
+      "q05": 1.38,
+      "q95": 3.199
+    },
+    "flavanoids": {
+      "min": 0.34,
+      "max": 3.74,
+      "median": 2.135,
+      "q05": 0.5105000000000001,
+      "q95": 3.2889999999999997
+    },
+    "nonflavanoid_phenols": {
+      "min": 0.13,
+      "max": 0.63,
+      "median": 0.34,
+      "q05": 0.2,
+      "q95": 0.58
+    },
+    "proanthocyanins": {
+      "min": 0.42,
+      "max": 3.58,
+      "median": 1.56,
+      "q05": 0.731,
+      "q95": 2.7569999999999992
+    },
+    "color_intensity": {
+      "min": 1.28,
+      "max": 13.0,
+      "median": 4.64,
+      "q05": 2.061,
+      "q95": 9.684999999999995
+    },
+    "hue": {
+      "min": 0.48,
+      "max": 1.71,
+      "median": 0.96,
+      "q05": 0.57,
+      "q95": 1.3084999999999998
+    },
+    "od280_od315_of_diluted_wines": {
+      "min": 1.27,
+      "max": 3.92,
+      "median": 2.78,
+      "q05": 1.472,
+      "q95": 3.5489999999999995
+    },
+    "proline": {
+      "min": 278.0,
+      "max": 1515.0,
+      "median": 673.5,
+      "q05": 378.1,
+      "q95": 1285.0
+    }
+  },
+  "median_kelas": {
+    "Kultivar A": {
+      "alcohol": 13.68,
+      "malic_acid": 1.76,
+      "ash": 2.44,
+      "alcalinity_of_ash": 17.0,
+      "magnesium": 104.0,
+      "total_phenols": 2.8,
+      "flavanoids": 2.94,
+      "nonflavanoid_phenols": 0.29,
+      "proanthocyanins": 1.87,
+      "color_intensity": 5.25,
+      "hue": 1.04,
+      "od280_od315_of_diluted_wines": 3.1,
+      "proline": 1080.0
+    },
+    "Kultivar B": {
+      "alcohol": 12.29,
+      "malic_acid": 1.61,
+      "ash": 2.24,
+      "alcalinity_of_ash": 20.5,
+      "magnesium": 88.0,
+      "total_phenols": 2.2,
+      "flavanoids": 2.01,
+      "nonflavanoid_phenols": 0.37,
+      "proanthocyanins": 1.62,
+      "color_intensity": 2.9,
+      "hue": 1.02,
+      "od280_od315_of_diluted_wines": 2.81,
+      "proline": 495.0
+    },
+    "Kultivar C": {
+      "alcohol": 13.094999999999999,
+      "malic_acid": 3.2649999999999997,
+      "ash": 2.3899999999999997,
+      "alcalinity_of_ash": 21.0,
+      "magnesium": 97.5,
+      "total_phenols": 1.605,
+      "flavanoids": 0.675,
+      "nonflavanoid_phenols": 0.45999999999999996,
+      "proanthocyanins": 1.105,
+      "color_intensity": 7.4,
+      "hue": 0.665,
+      "od280_od315_of_diluted_wines": 1.7,
+      "proline": 622.5
+    }
+  },
+  "metrik_test": {
+    "accuracy": 1.0,
+    "accuracy_ci95": [
+      0.9035781695514236,
+      1.0
+    ],
+    "balanced_accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "f1_weighted": 1.0,
+    "mcc": 1.0,
+    "log_loss": 0.05857701729926864,
+    "roc_auc_ovr_macro": 1.0,
+    "confusion_matrix": [
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        10
+      ]
+    ],
+    "laporan_kelas": {
+      "Kultivar A": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "Kultivar B": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 14.0
+      },
+      "Kultivar C": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 10.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 36.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 36.0
+      }
+    },
+    "n_test": 36,
+    "n_salah": 0,
+    "baseline_akurasi_mayoritas": 0.3888888888888889
+  },
+  "cv_model": [
+    {
+      "model": "Logistic Regression",
+      "f1_macro_mean": 0.9859405896746051,
+      "f1_macro_std": 0.023040255511471975,
+      "accuracy_mean": 0.9860837438423646,
+      "balanced_accuracy_mean": 0.9886363636363636
+    },
+    {
+      "model": "SVM (RBF)",
+      "f1_macro_mean": 1.0,
+      "f1_macro_std": 0.0,
+      "accuracy_mean": 1.0,
+      "balanced_accuracy_mean": 1.0
+    },
+    {
+      "model": "KNN",
+      "f1_macro_mean": 0.9666964595282673,
+      "f1_macro_std": 0.022008484363246705,
+      "accuracy_mean": 0.9647783251231526,
+      "balanced_accuracy_mean": 0.9707070707070706
+    },
+    {
+      "model": "Random Forest",
+      "f1_macro_mean": 0.9791187214917866,
+      "f1_macro_std": 0.028283903690816327,
+      "accuracy_mean": 0.9789408866995075,
+      "balanced_accuracy_mean": 0.982020202020202
+    },
+    {
+      "model": "Gradient Boosting",
+      "f1_macro_mean": 0.9556883794378747,
+      "f1_macro_std": 0.05010134626603632,
+      "accuracy_mean": 0.9545566502463055,
+      "balanced_accuracy_mean": 0.958975468975469
+    }
+  ],
+  "ablasi_fitur": [
+    {
+      "varian": "A. Fitur asli saja (13)",
+      "Logistic Regression": 0.9814960196222816,
+      "SVM (RBF)": 0.9886255408341827,
+      "Random Forest": 0.9812343787340422,
+      "rata_rata": 0.9837853130635023
+    },
+    {
+      "varian": "B. Asli + rasio (19)",
+      "Logistic Regression": 0.986748399843029,
+      "SVM (RBF)": 0.9958830409356725,
+      "Random Forest": 0.9767282341455179,
+      "rata_rata": 0.9864532249747399
+    },
+    {
+      "varian": "C. Rasio, tanpa total_phenols & flavanoids (17)",
+      "Logistic Regression": 0.9891137904437137,
+      "SVM (RBF)": 0.9979415204678362,
+      "Random Forest": 0.9789560258469938,
+      "rata_rata": 0.9886704455861812
+    }
+  ],
+  "importansi": [
+    {
+      "fitur": "flavanoids",
+      "rata_rata": 0.2052616510801238,
+      "std": 0.030624535821756557
+    },
+    {
+      "fitur": "total_phenols",
+      "rata_rata": 0.04636970655075681,
+      "std": 0.01534263827022707
+    },
+    {
+      "fitur": "proline",
+      "rata_rata": 0.04543497474953795,
+      "std": 0.02070459739912249
+    },
+    {
+      "fitur": "alcalinity_of_ash",
+      "rata_rata": 0.031520308566216106,
+      "std": 0.00880711455779579
+    },
+    {
+      "fitur": "proanthocyanins",
+      "rata_rata": 0.0305978494603092,
+      "std": 0.015286731651365132
+    },
+    {
+      "fitur": "alcohol",
+      "rata_rata": 0.013232318901559575,
+      "std": 0.00776166642937109
+    },
+    {
+      "fitur": "ash",
+      "rata_rata": 0.011924765689608652,
+      "std": 0.006550266495871723
+    },
+    {
+      "fitur": "od280_od315_of_diluted_wines",
+      "rata_rata": 0.010727001295565941,
+      "std": 0.009240630398124774
+    },
+    {
+      "fitur": "color_intensity",
+      "rata_rata": 0.00440960469557673,
+      "std": 0.0048837157901572385
+    },
+    {
+      "fitur": "hue",
+      "rata_rata": 0.003314869592230885,
+      "std": 0.005455374074126775
+    },
+    {
+      "fitur": "malic_acid",
+      "rata_rata": 0.0,
+      "std": 0.0
+    },
+    {
+      "fitur": "magnesium",
+      "rata_rata": 0.0,
+      "std": 0.0
+    },
+    {
+      "fitur": "nonflavanoid_phenols",
+      "rata_rata": 0.0,
+      "std": 0.0
+    }
+  ],
+  "audit": {
+    "jumlah_baris": 178,
+    "jumlah_kolom": 14,
+    "duplikat": 0,
+    "missing_total": 0,
+    "missing_per_kolom": {},
+    "tipe_data": {
+      "alcohol": "float64",
+      "malic_acid": "float64",
+      "ash": "float64",
+      "alcalinity_of_ash": "float64",
+      "magnesium": "float64",
+      "total_phenols": "float64",
+      "flavanoids": "float64",
+      "nonflavanoid_phenols": "float64",
+      "proanthocyanins": "float64",
+      "color_intensity": "float64",
+      "hue": "float64",
+      "od280_od315_of_diluted_wines": "float64",
+      "proline": "float64",
+      "kultivar": "str"
+    },
+    "nilai_tidak_wajar_<=0": 0,
+    "outlier_iqr": {
+      "malic_acid": 3,
+      "ash": 3,
+      "alcalinity_of_ash": 4,
+      "magnesium": 4,
+      "proanthocyanins": 2,
+      "color_intensity": 4,
+      "hue": 1
+    },
+    "distribusi_kelas": {
+      "Kultivar B": 71,
+      "Kultivar A": 59,
+      "Kultivar C": 48
+    },
+    "korelasi_tinggi": [
+      {
+        "fitur_1": "total_phenols",
+        "fitur_2": "flavanoids",
+        "korelasi": 0.865
+      },
+      {
+        "fitur_1": "flavanoids",
+        "fitur_2": "od280_od315_of_diluted_wines",
+        "korelasi": 0.787
+      },
+      {
+        "fitur_1": "total_phenols",
+        "fitur_2": "od280_od315_of_diluted_wines",
+        "korelasi": 0.7
+      },
+      {
+        "fitur_1": "flavanoids",
+        "fitur_2": "proanthocyanins",
+        "korelasi": 0.653
+      },
+      {
+        "fitur_1": "alcohol",
+        "fitur_2": "proline",
+        "korelasi": 0.644
+      },
+      {
+        "fitur_1": "total_phenols",
+        "fitur_2": "proanthocyanins",
+        "korelasi": 0.612
+      }
+    ]
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "n_train": 142,
+    "n_test": 36
+  },
+  "versi": {
+    "python": "3.12.3",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4"
+  },
+  "dilatih_pada": "2026-11-23T07:59:40"
+}
